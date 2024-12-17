@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es"><head>
+    <!-- Datos que describen el documento -->
+    <title>F1 DESKTOP Noticias</title>
+    <link rel="icon" href="multimedia/imagenes/favicon.ico">
+    <meta name="author" content="Sergio García Santamarina">
+    <meta name="description" content="Documento para utilizar en otros módulos de la asignatura">
+    <meta charset="UTF-8">
+    <meta name="keywords" content="por cambiar"> <!--CAMBIAR-->
+    <meta name="viewport" content="width= device-width, initial-scale=1.0">
+     <!-- añadir el elemento link de enlace a la hoja de estilo dentro del <head> del documento html -->
+    <link rel="stylesheet" type="text/css" href="estilo/estilo.css">
+    <link rel="stylesheet" type="text/css" href="estilo/layout.css">
+    <link rel="stylesheet" type="text/css" href="estilo/article_element.css">
+    <script src="js/noticias.js"></script>
+</head>
+
+<body>
+    <!-- Datos con el contenidos que aparece en el navegador -->
+    <header>
+    <h1>F1 Desktop</h1>
+    <nav>
+        <a href="index.html">Inicio</a> 
+        <a href="piloto.html">Piloto</a> 
+        <a href="noticias.html">Noticias</a> 
+        <a href="calendario.html">Calendario</a> 
+        <a href="meteorología.html">Meteorología</a> 
+        <a href="circuito.html">Circuito</a> 
+        <a href="viajes.php">Viajes</a> 
+        <a href="juegos.html">Juegos</a>
+    </nav> 
+    </header>
+    <p>Estás en: <a href="index.html">Inicio</a> &gt; &gt; Noticias</p>
+    <aside>
+        <label for="noticias">Cargar noticias:</label>
+        <input type="file" id="noticias" onchange="noticias.readInputFile(this.files)">
+    </aside>
+    <main>
+    <h2>Noticias</h2>
+    <article><h3>Alonso, más cerca de ser historia en Asturias</h3><p>El asturiano está en proceso de ampliar su museo y circuito consiguiendo algo nunca antes visto en el Principado</p><p>Autor: Javier Pazos</p></article><article><h3>Briatore asegura que da igual el piloto que fiche Alpine para 2025</h3><p>Cree que no marcará la diferencia y se quiere centrar en 2026</p><p>Autor: Pol Hermoso</p></article><article><h3>En McLaren creen en la remontada de Aston Martin</h3><p>Zak Brown, CEO de la escudería británica, asegura que en 2025 puede haber varios equipos que mejoren su rendimiento, cómo han hecho ellos este año</p><p>Autor: Manuel Rodriguez</p></article></main>
+    <!--Section dedicado a la introducción de información para la creacion
+    de las noticias por el usuario-->
+    <aside>
+    <section>
+        <h3>Creación de noticias</h3>
+        <label for="titulo">Titulo noticia:</label>
+        <input type="text" id="titulo" placeholder="Introduce el titulo de la noticia">
+
+        <label for="contenido">Contenido noticia:</label>
+        <input type="text" id="contenido" placeholder="Introduce el contenido de la noticia">
+
+        <label for="autor">Autor noticia:</label>
+        <input type="text" id="autor" placeholder="Introduce el autor de la noticia">
+
+        <button>Crear noticia</button>
+    </section>
+    </aside>
+    <script>
+        noticias = new Noticia();
+    </script>
+
+</body></html>

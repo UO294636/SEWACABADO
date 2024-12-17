@@ -1,0 +1,67 @@
+/*Sergio García Santamarina UO294636*/
+/*En el validador salen warnings en la linea 0, pero realmente es un los flex de las media querys.
+
+/*Especificidad (0, 0, 1)*/
+section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: stretch; /* Asegura alturas iguales en una fila */
+    gap: 1.5rem;
+    padding: 2rem;
+    max-width: 90%;
+    margin: auto;
+}
+section h2{
+    flex: 0 0 100%; /* Ocupa toda la fila */
+    text-align: center; /* Centra el texto */
+    margin: 0; /* Ajusta márgenes */
+    
+}
+/*Especificidad (0, 0, 1)*/
+article {
+    flex: 1 1 calc(25% - 1rem); /* Espaciado uniforme en filas */
+    max-width: 20rem;
+    min-width: 15rem;
+    min-height: 15rem; /* Asegura alturas mínimas iguales */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Distribuye el contenido equitativamente */
+    align-items: center;
+    padding: 1rem;
+    border: 0.2em solid #000;
+    border-radius: 0.5rem;
+    background-color: #63FCE8; /*Hereda de body el negro como color de primer plano*/
+    text-align: center;
+    /*box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);*/
+}
+
+
+
+ /*Especificidad (0, 0, 2)*/ 
+article h3 {
+    font-size: 1.5rem; /* Escalable según el tamaño base de fuente */
+    margin-bottom: 0.5rem;
+}
+
+/*Especificidad (0, 0, 2)*/
+article p {
+    margin: 0.5rem 0;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+@media screen and (max-width: 465px) {
+    /*Especificidad (0, 0, 1)*/
+    article {
+        flex: 1 1 100%; /*Ajusta el tamaño y la forma en la que sen ven en movil,siendo esta en una fila hacia abajo*/
+    }
+}
+
+@media screen and (max-width: 768px) {
+    /*Especificidad (0, 0, 1)*/
+    article {
+        flex: 1 1 calc(50% - 1rem);/*Ajusta el tamaño y la forma en la que sen ven en tablet,siendo esta en una fila hacia abajo, 
+        pero mas espaciada en proporcion a la pantalla*/
+    }
+}
+

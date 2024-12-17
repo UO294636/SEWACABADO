@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<circuito xmlns="http://www.uniovi.es" xsi:schemaLocation="http://www.uniovi.es circuito.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" >
+    <nombre>HUNGARORING</nombre>
+    <longitud>4381</longitud>
+    <anchura>14</anchura>
+    <fechaCarrera>2024-07-21</fechaCarrera>
+    <horaInicio>15:00:00</horaInicio>
+    <numVueltas>70</numVueltas>
+    <localidad>Mogyoród</localidad>
+    <pais>Hungría</pais>
+    <referencias>
+        <referencia>https://es.wikipedia.org/wiki/Gran_Premio_de_Hungr%C3%ADa</referencia>
+        <referencia>https://www.formula1.com/en/racing/2024/Hungary.html</referencia>
+        <referencia>https://www.motorpasion.com/formula1/gp-de-hungria-de-formula-1-analisis-tecnico-de-hungaroring</referencia>
+    </referencias>
+    <galeriaFotos>
+        <fotografia>imagenHungria1.jpg</fotografia>
+        <fotografia>imagenHungria2.jpg</fotografia>
+    </galeriaFotos>
+    <galeriaVideos>
+        <video>vueltaonboardHungria.mp4</video>
+    </galeriaVideos>
+    <coordenadas>
+        <longitud>191503</longitud>
+        <latitud>473454</latitud>
+        <altitud>264</altitud>
+    </coordenadas>
+    <tramos>
+        <tramo distancia="350" unidadDistancia="metros" sector="1">
+            <longitud>19.2458</longitud>
+            <latitud>47.5802</latitud>
+            <altitud>236</altitud>
+        </tramo>
+        <tramo distancia="44" unidadDistancia="metros" sector="1">
+            <longitud>19.2422</longitud>
+            <latitud>47.5821</latitud>
+            <altitud>229</altitud>
+        </tramo>
+        <tramo distancia="263" unidadDistancia="metros" sector="1">
+            <longitud>19.2436</longitud>
+            <latitud>47.5824</latitud>
+            <altitud>227</altitud>
+        </tramo>
+        <tramo distancia="70" unidadDistancia="metros" sector="1">
+            <longitud>19.2448</longitud>
+            <latitud>47.5822</latitud>
+            <altitud>225</altitud>
+        </tramo>
+        <tramo distancia="140" unidadDistancia="metros" sector="1">
+            <longitud>19.2475</longitud>
+            <latitud>47.5808</latitud>
+            <altitud>221</altitud>
+        </tramo>
+        <tramo distancia="460" unidadDistancia="metros" sector="1">
+            <longitud>19.2483</longitud>
+            <latitud>47.5809</latitud>
+            <altitud>218</altitud>
+        </tramo>
+        <tramo distancia="25" unidadDistancia="metros" sector="1">
+            <longitud>19.2483</longitud>
+            <latitud>47.5814</latitud>
+            <altitud>213</altitud>
+        </tramo>
+        <tramo distancia="187" unidadDistancia="metros" sector="1">
+            <longitud>19.2476</longitud>
+            <latitud>47.5822</latitud>
+            <altitud>208</altitud>
+        </tramo>
+        <tramo distancia="76" unidadDistancia="metros" sector="1">
+            <longitud>19.2477</longitud>
+            <latitud>47.5827</latitud>
+            <altitud>204</altitud>
+        </tramo>
+        <tramo distancia="270" unidadDistancia="metros" sector="2">
+            <longitud>19.2498</longitud>
+            <latitud>47.5855</latitud>
+            <altitud>213</altitud>
+        </tramo>
+        <tramo distancia="37" unidadDistancia="metros" sector="2">
+            <longitud>19.2505</longitud>
+            <latitud>47.5861</latitud>
+            <altitud>214</altitud>
+        </tramo>
+        <tramo distancia="170" unidadDistancia="metros" sector="2">
+            <longitud>19.2505</longitud>
+            <latitud>47.5864</latitud>
+            <altitud>215</altitud>
+        </tramo>
+        <tramo distancia="37" unidadDistancia="metros" sector="2">
+            <longitud>19.2499</longitud>
+            <latitud>47.5878</latitud>
+            <altitud>218</altitud>
+        </tramo>
+        <tramo distancia="82" unidadDistancia="metros" sector="2">
+            <longitud>19.2502</longitud>
+            <latitud>47.5882</latitud>
+            <altitud>220</altitud>
+        </tramo>
+        <tramo distancia="45" unidadDistancia="metros" sector="2">
+            <longitud>19.2510</longitud>
+            <latitud>47.5883</latitud>
+            <altitud>222</altitud>
+        </tramo>
+        <tramo distancia="170" unidadDistancia="metros" sector="2">
+            <longitud>19.2518</longitud>
+            <latitud>47.5880</latitud>
+            <altitud>226</altitud>
+        </tramo>
+        <tramo distancia="150" unidadDistancia="metros" sector="2">
+            <longitud>19.2535</longitud>
+            <latitud>47.5868</latitud>
+            <altitud>227</altitud>
+        </tramo>
+        <tramo distancia="20" unidadDistancia="metros" sector="2">
+            <longitud>19.2535</longitud>
+            <latitud>47.5866</latitud>
+            <altitud>227</altitud>
+        </tramo>
+        <tramo distancia="150" unidadDistancia="metros" sector="2">
+            <longitud>19.2533</longitud>
+            <latitud>47.5865</latitud>
+            <altitud>228</altitud>
+        </tramo>
+        <tramo distancia="150" unidadDistancia="metros" sector="2">
+            <longitud>19.2537</longitud>
+            <latitud>47.5851</latitud>
+            <altitud>229</altitud>
+        </tramo>
+        <tramo distancia="150" unidadDistancia="metros" sector="2">
+            <longitud>19.2541</longitud>
+            <latitud>47.5849</latitud>
+            <altitud>229</altitud>
+        </tramo>
+        <tramo distancia="150" unidadDistancia="metros" sector="2">
+            <longitud>19.2553</longitud>
+            <latitud>47.5848</latitud>
+            <altitud>228</altitud>
+        </tramo>
+        <tramo distancia="150" unidadDistancia="metros" sector="2">
+            <longitud>19.2557</longitud>
+            <latitud>47.5845</latitud>
+            <altitud>229</altitud>
+        </tramo>
+        <tramo distancia="150" unidadDistancia="metros" sector="2">
+            <longitud>19.2554</longitud>
+            <latitud>47.5830</latitud>
+            <altitud>229</altitud>
+        </tramo>
+        <tramo distancia="150" unidadDistancia="metros" sector="2">
+            <longitud>19.2556</longitud>
+            <latitud>47.5825</latitud>
+            <altitud>229</altitud>
+        </tramo>
+        <tramo distancia="150" unidadDistancia="metros" sector="2">
+            <longitud>19.2564</longitud>
+            <latitud>47.5817</latitud>
+            <altitud>230</altitud>
+        </tramo>
+        <tramo distancia="150" unidadDistancia="metros" sector="2">
+            <longitud>19.2564</longitud>
+            <latitud>47.5811</latitud>
+            <altitud>232</altitud>
+        </tramo>
+        <tramo distancia="150" unidadDistancia="metros" sector="3">
+            <longitud>19.2554</longitud>
+            <latitud>47.5804</latitud>
+            <altitud>235</altitud>
+        </tramo>
+        <tramo distancia="150" unidadDistancia="metros" sector="3">
+            <longitud>19.2532</longitud>
+            <latitud>47.5786</latitud>
+            <altitud>232</altitud>
+        </tramo>
+        <tramo distancia="150" unidadDistancia="metros" sector="3">
+            <longitud>19.2529</longitud>
+            <latitud>47.5786</latitud>
+            <altitud>234</altitud>
+        </tramo>
+        <tramo distancia="150" unidadDistancia="metros" sector="3">
+            <longitud>19.2508</longitud>
+            <latitud>47.5799</latitud>
+            <altitud>235</altitud>
+        </tramo>
+        <tramo distancia="150" unidadDistancia="metros" sector="3">
+            <longitud>19.2503</longitud>
+            <latitud>47.5798</latitud>
+            <altitud>233</altitud>
+        </tramo>
+        <tramo distancia="150" unidadDistancia="metros" sector="3">
+            <longitud>19.2502</longitud>
+            <latitud>47.5793</latitud>
+            <altitud>232</altitud>
+        </tramo>
+        <tramo distancia="150" unidadDistancia="metros" sector="3">
+            <longitud>19.2517</longitud>
+            <latitud>47.5785</latitud>
+            <altitud>232</altitud>
+        </tramo>
+        <tramo distancia="150" unidadDistancia="metros" sector="3">
+            <longitud>19.2520</longitud>
+            <latitud>47.5780</latitud>
+            <altitud>230</altitud>
+        </tramo>
+        <tramo distancia="150" unidadDistancia="metros" sector="3">
+            <longitud>19.2516</longitud>
+            <latitud>47.5776</latitud>
+            <altitud>232</altitud>
+        </tramo>
+        <tramo distancia="150" unidadDistancia="metros" sector="3">
+            <longitud>19.2508</longitud>
+            <latitud>47.5776</latitud>
+            <altitud>234</altitud>
+        </tramo>
+        <tramo distancia="150" unidadDistancia="metros" sector="3">
+            <longitud>19.2502</longitud>
+            <latitud>47.5779</latitud>
+            <altitud>237</altitud>
+        </tramo>
+        <tramo distancia="350" unidadDistancia="metros" sector="3">
+            <longitud>19.2458</longitud>
+            <latitud>47.5802</latitud>
+            <altitud>237</altitud>
+        </tramo>
+
+    </tramos>
+</circuito>

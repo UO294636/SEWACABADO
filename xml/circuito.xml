@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE circuito SYSTEM "circuito.dtd">
+
+<circuito>
+    <nombre>HUNGARORING</nombre>
+    <longitud>4381 metros</longitud>
+    <anchura>Anchura máxima de 14 metros</anchura>
+    <fechaCarrera>21-07-2024</fechaCarrera>
+    <horaInicio>15:00</horaInicio>
+    <numVueltas>70</numVueltas>
+    <localidad>Mogyoród</localidad>
+    <pais>Hungría</pais>
+    <referencias>
+        <referencia>https://es.wikipedia.org/wiki/Gran_Premio_de_Hungr%C3%ADa</referencia>
+        <referencia>https://www.formula1.com/en/racing/2024/Hungary.html</referencia>
+        <referencia>https://www.motorpasion.com/formula1/gp-de-hungria-de-formula-1-analisis-tecnico-de-hungaroring</referencia>
+    </referencias>
+    <galeriaFotos>
+        <fotografia>imagenHungria1.jpg</fotografia>
+        <fotografia>imagenHungria2.jpg</fotografia>
+    </galeriaFotos>
+    <galeriaVideos>
+        <video>vueltaonboardHungria.mp4</video>
+    </galeriaVideos>
+    <coordenadas>
+        <longitud>19°15'03" E</longitud>
+        <latitud>47°34'54" N</latitud>
+        <altitud>264 metros sobre el nivel del mar</altitud>
+    </coordenadas>
+    <tramos>
+        <tramo distancia="700" unidadDistancia="metros" sector="1">
+            <longitud>19.2486° E</longitud>
+            <latitud>47.5783° N</latitud>
+            <altitud>264</altitud>
+        </tramo>
+        <tramo distancia="20" unidadDistancia="metros" sector="1">
+            <longitud>19.2560° E</longitud>
+            <latitud>47.5795° N</latitud>
+            <altitud>264</altitud>
+        </tramo>
+        <tramo distancia="150" unidadDistancia="metros" sector="1">
+            <longitud>19.2575° E</longitud>
+            <latitud>47.5780° N</latitud>
+            <altitud>264</altitud>
+        </tramo>
+        <tramo distancia="a" unidadDistancia="metros" sector="1">
+            <longitud>19.2436° E</longitud>
+            <latitud>47.5824° N</latitud>
+            <altitud>264</altitud>
+        </tramo>
+        <tramo distancia="a" unidadDistancia="metros" sector="1">
+            <longitud>19.2448° E</longitud>
+            <latitud>47.5822° N</latitud>
+            <altitud>264</altitud>
+        </tramo>
+        <tramo distancia="aa" unidadDistancia="metros" sector="1">
+            <longitud>19.2475° E</longitud>
+            <latitud>47.5808° N</latitud>
+            <altitud>264</altitud>
+        </tramo>
+        <tramo distancia="aaa" unidadDistancia="metros" sector="1">
+            <longitud>19.2483° E</longitud>
+            <latitud>47.5809° N</latitud>
+            <altitud>264</altitud>
+        </tramo>
+        <tramo distancia="aaaa" unidadDistancia="metros" sector="1">
+            <longitud>19.2483° E</longitud>
+            <latitud>47.5814° N</latitud>
+            <altitud>264</altitud>
+        </tramo>
+        <tramo distancia="aaaaa" unidadDistancia="metros" sector="1">
+            <longitud>19.2476° E</longitud>
+            <latitud>47.5822° N</latitud>
+            <altitud>264</altitud>
+        </tramo>
+        <tramo distancia="aaaaa" unidadDistancia="metros" sector="1">
+            <longitud>19.2477° E</longitud>
+            <latitud>47.5827° N</latitud>
+            <altitud>264</altitud>
+        </tramo>
+        <tramo distancia="150" unidadDistancia="metros" sector="2">
+            <longitud>19.2498° E</longitud>
+            <latitud>47.5855° N</latitud>
+            <altitud>264</altitud>
+        </tramo>
+        <tramo distancia="150" unidadDistancia="metros" sector="2">
+            <longitud>19.2505° E</longitud>
+            <latitud>47.5861° N</latitud>
+            <altitud>264</altitud>
+        </tramo>
+        <tramo distancia="150" unidadDistancia="metros" sector="2">
+            <longitud>19.2505° E</longitud>
+            <latitud>47.5864° N</latitud>
+            <altitud>264</altitud>
+        </tramo>
+        <tramo distancia="150" unidadDistancia="metros" sector="2">
+            <longitud>19.2499° E</longitud>
+            <latitud>47.5878° N</latitud>
+            <altitud>264</altitud>
+        </tramo>
+        <tramo distancia="150" unidadDistancia="metros" sector="2">
+            <longitud>19.2502° E</longitud>
+            <latitud>47.5882° N</latitud>
+            <altitud>264</altitud>
+        </tramo>
+        <tramo distancia="150" unidadDistancia="metros" sector="2">
+            <longitud>19.2510° E</longitud>
+            <latitud>47.5883° N</latitud>
+            <altitud>264</altitud>
+        </tramo>
+        <tramo distancia="150" unidadDistancia="metros" sector="2">
+            <longitud>19.2518° E</longitud>
+            <latitud>47.5880° N</latitud>
+            <altitud>264</altitud>
+        </tramo>
+        <tramo distancia="150" unidadDistancia="metros" sector="2">
+            <longitud>19.2535° E</longitud>
+            <latitud>47.5868° N</latitud>
+            <altitud>264</altitud>
+        </tramo>
+        <tramo distancia="150" unidadDistancia="metros" sector="2">
+            <longitud>19.2535° E</longitud>
+            <latitud>47.5866° N</latitud>
+            <altitud>264</altitud>
+        </tramo>
+        <tramo distancia="150" unidadDistancia="metros" sector="2">
+            <longitud>19.2533° E</longitud>
+            <latitud>47.5865° N</latitud>
+            <altitud>264</altitud>
+        </tramo>
+        <tramo distancia="150" unidadDistancia="metros" sector="2">
+            <longitud>19.2537° E</longitud>
+            <latitud>47.5851° N</latitud>
+            <altitud>264</altitud>
+        </tramo>
+        <tramo distancia="150" unidadDistancia="metros" sector="2">
+            <longitud>19.2541° E</longitud>
+            <latitud>47.5849° N</latitud>
+            <altitud>264</altitud>
+        </tramo>
+        <tramo distancia="150" unidadDistancia="metros" sector="2">
+            <longitud>19.2553° E</longitud>
+            <latitud>47.5848° N</latitud>
+            <altitud>264</altitud>
+        </tramo>
+        <tramo distancia="150" unidadDistancia="metros" sector="2">
+            <longitud>19.2557° E</longitud>
+            <latitud>47.5845° N</latitud>
+            <altitud>264</altitud>
+        </tramo>
+        <tramo distancia="150" unidadDistancia="metros" sector="2">
+            <longitud>19.2554° E</longitud>
+            <latitud>47.5830° N</latitud>
+            <altitud>264</altitud>
+        </tramo>
+        <tramo distancia="150" unidadDistancia="metros" sector="2">
+            <longitud>19.2556° E</longitud>
+            <latitud>47.5825° N</latitud>
+            <altitud>264</altitud>
+        </tramo>
+        <tramo distancia="150" unidadDistancia="metros" sector="2">
+            <longitud>19.2564° E</longitud>
+            <latitud>47.5817° N</latitud>
+            <altitud>264</altitud>
+        </tramo>
+        <tramo distancia="150" unidadDistancia="metros" sector="2">
+            <longitud>19.2564° E</longitud>
+            <latitud>47.5811° N</latitud>
+            <altitud>264</altitud>
+        </tramo>
+        <tramo distancia="150" unidadDistancia="metros" sector="3">
+            <longitud>19.2554° E</longitud>
+            <latitud>47.5804° N</latitud>
+            <altitud>264</altitud>
+        </tramo>
+        <tramo distancia="150" unidadDistancia="metros" sector="3">
+            <longitud>19.2532° E</longitud>
+            <latitud>47.5786° N</latitud>
+            <altitud>264</altitud>
+        </tramo>
+        <tramo distancia="150" unidadDistancia="metros" sector="3">
+            <longitud>19.2529° E</longitud>
+            <latitud>47.5786° N</latitud>
+            <altitud>264</altitud>
+        </tramo>
+        <tramo distancia="150" unidadDistancia="metros" sector="3">
+            <longitud>19.2551° E</longitud>
+            <latitud>47.5794° N</latitud>
+            <altitud>264</altitud>
+        </tramo>
+        <tramo distancia="150" unidadDistancia="metros" sector="3">
+            <longitud>19.2508° E</longitud>
+            <latitud>47.5799° N</latitud>
+            <altitud>264</altitud>
+        </tramo>
+        <tramo distancia="150" unidadDistancia="metros" sector="3">
+            <longitud>19.2503° E</longitud>
+            <latitud>47.5798° N</latitud>
+            <altitud>264</altitud>
+        </tramo>
+        <tramo distancia="150" unidadDistancia="metros" sector="3">
+            <longitud>19.2502° E</longitud>
+            <latitud>47.5793° N</latitud>
+            <altitud>264</altitud>
+        </tramo>
+        <tramo distancia="150" unidadDistancia="metros" sector="3">
+            <longitud>19.2517° E</longitud>
+            <latitud>47.5785° N</latitud>
+            <altitud>264</altitud>
+        </tramo>
+        <tramo distancia="150" unidadDistancia="metros" sector="3">
+            <longitud>19.2520° E</longitud>
+            <latitud>47.5780° N</latitud>
+            <altitud>264</altitud>
+        </tramo>
+        <tramo distancia="150" unidadDistancia="metros" sector="3">
+            <longitud>19.2516° E</longitud>
+            <latitud>47.5776° N</latitud>
+            <altitud>264</altitud>
+        </tramo>
+        <tramo distancia="150" unidadDistancia="metros" sector="3">
+            <longitud>19.2508° E</longitud>
+            <latitud>47.5776° N</latitud>
+            <altitud>264</altitud>
+        </tramo>
+        <tramo distancia="150" unidadDistancia="metros" sector="3">
+            <longitud>19.2502° E</longitud>
+            <latitud>47.5779° N</latitud>
+            <altitud>264</altitud>
+        </tramo>
+
+    </tramos>
+</circuito>

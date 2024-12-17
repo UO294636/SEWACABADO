@@ -1,0 +1,123 @@
+/*Sergio Garcia Santamarina UO294636*/
+
+/*Especificidad: 001*/
+h2{
+    text-align: center;
+}
+
+/*Especificidad: 001*/
+nav{
+    justify-content: center;
+}
+/*Especificidad 001*/
+section{
+    position: relative; 
+    display: grid;
+    grid-template-columns: repeat(4, 20vw);
+    grid-template-rows: auto repeat(3, 25vh);
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    margin-top: 2rem;
+    gap: 5%;
+    max-width: 60%;
+    max-height: 60%;
+    justify-content: center;
+    margin: auto;/*Redefinicion para que ocupen en la parte de memoria*/
+}
+
+/*Especificidad: 002*/
+section h2 {
+    position: absolute;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+/*Especificidad: 001*/
+article {
+
+    width: 20vw;
+    height: 25vh;
+    margin: 0.5em;
+
+    transform-style: preserve-3d;
+    transition: transform .5s;
+
+    border-radius: 0.3em;
+    background-color: #ffffff;
+    color: #000000;
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+/*Especificidad: 002*/
+article img{
+    width: 80%;
+    height: 50%;
+    position: absolute;
+    transform: rotateY(180deg);
+    margin: auto;
+}
+
+/*Especificidad: 002*/
+article h3 {
+  
+    justify-content: center;
+    text-align: center;
+    font-size: 2vw;
+}
+
+/*Especificidad: 002*/
+article img, article h3{
+    position: absolute;/*Redefinicion para Centro el titulo de y la imagen*/
+    backface-visibility: hidden;
+}
+
+/*Especificidad: 011*/
+article[data-state = "flip"], article[data-state = "revealed"]{
+    transform: rotateY(180deg);
+}
+
+/*Especificidad: 011*/
+article[data-state = "revealed"]{
+    transform: rotateY(180deg); /*Redefinicion para mostrar la carta*/
+}
+button{
+    margin: auto;
+    display: block;
+    transform: translateY(-100%);
+    padding: 4vh;
+    border-radius: 20%;
+    background: #ffff;
+    font-size: 2em;
+}
+
+@media screen and (max-width: 465px) {
+
+    section {
+        max-width: 80%; /* Redefinición para adaptar la disposición de las cartas a móviles */
+    }
+
+    section h2 {
+        font-size: 7vw; /* Ajusta este valor según sea necesario para pantallas pequeñas */
+        grid-column: span 4; /* Asegura que ocupe toda la primera fila */
+        position: static; /* Redefinicion para ya que esto evita que el h2 se salga del flujo normal */
+        text-align: center;
+       
+    }
+    button{
+        /*Redefinicion para que se vea mas pequeño y mejor en movil*/
+    margin: auto; 
+    display: block;
+    transform: translateY(180%);
+    padding: 0.5vh;
+    border-radius: 20%;
+    background: #ffff;/*Hereda color de body*/
+    font-size: 1em;
+    }
+}

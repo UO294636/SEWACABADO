@@ -1,0 +1,104 @@
+/* Sergio Garcia Santamarina UO294636 */
+
+/*Especificidad 001*/
+main {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Cuatro columnas para las luces */
+    grid-template-rows: auto auto auto auto; /* Cuatro filas para cada sección */
+    gap: 1rem;
+    padding: 2rem;
+    justify-items: center;
+    text-align: center;
+}
+
+/* Especificidad 001 */
+h3 {
+    grid-column: 1 / -1; /* Ocupa toda la fila de la cuadrícula */
+    font-size: 2rem;
+    color: #333; /*Hereda el background de body*/
+    margin: 0;
+    text-align: center;
+}
+
+/* Especificidad 012 */
+main > div:nth-child(2),
+main > div:nth-child(3),
+main > div:nth-child(4),
+main > div:nth-child(5) {
+    width: 100%; /* Ajustar ancho para que ocupe el espacio de la columna */
+    height: 15vw;
+    max-width: 50%;
+    max-height: 50%;
+    background-color: #333; /* Estado apagado *//*Hereda el color de body*/
+    border: 0.15em solid #000;
+    border-radius: 50%;
+    margin: auto;
+}
+
+/*Especificidad 001 */
+button {
+    grid-column: 1 / -1; /* Ocupa toda la fila debajo del semáforo, ya que el 1 indica el inicio de posicion en la columna y el -1 la ultima linea del grid */
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
+    cursor: pointer;
+    border: none;
+    border-radius: 0.5rem;
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    transition: background-color 0.3s;
+}
+/*Especificidad 012*/
+main > button:disabled {
+    background-color: #bbb; /*hereda color de button*/
+    cursor: not-allowed;
+}
+/*Especificidad 022*/
+main > button:hover:not(:disabled) {
+    background-color: #0056b3;/*hereda el color del boton*/
+}
+/*002*/
+main > p {
+    grid-column: 1 / -1; /* Ocupa toda la fila final */
+    font-size: 1.2em;
+    color: #333;/*Hereda el background de body*/
+    margin-top: 20px;
+    text-align: center;
+    display: block;
+}
+/*Especificidad 001*/
+form{
+    grid-column: span 4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+/* Animación de encendido de las luces */
+@keyframes lightOn {
+    to {
+        background-color: red;/*Cambio para que cambie cuando este encendido*/
+    }
+}
+
+@keyframes lightOff {
+    to {
+        background-color: #333;/*Cambio para que cambie cuando este apagado*/
+    }
+}
+
+/* Especificidad 021 */
+.load > div:nth-child(2) { animation: lightOn 0.5s forwards; }
+.load > div:nth-child(3) { animation: lightOn 0.5s 0.5s forwards; }
+.load > div:nth-child(4) { animation: lightOn 0.5s 1s forwards; }
+.load > div:nth-child(5) { animation: lightOn 0.5s 1.5s forwards; }
+
+/* Especificidad 021 */
+.unload > div:nth-child(2),
+.unload > div:nth-child(3),
+.unload > div:nth-child(4),
+.unload > div:nth-child(5) {
+    animation: lightOff 0.1s forwards;
+}
+
+

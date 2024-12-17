@@ -1,0 +1,51 @@
+/*Sergio Garcia Santamarina*/
+/*Especificidad: 001*/
+form{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    width: fit-content;
+    gap: 1%;
+}
+
+/*Especificidad: 001*/
+p{
+    text-align: center;
+    margin-bottom: 2em;
+}
+h2{
+    justify-content: center;
+}
+
+/*Especificidad: 001*/
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/*Especificidad: 001*/
+table{
+    width: fit-content;
+    margin: auto;
+}
+/*Especificidad: 001*/
+button {
+    /*display: block;*/
+    margin: 1rem auto;          /* Centra los botones horizontalmente */
+    width: 100%;                /* Que ocupe todo el ancho del fieldset */
+    max-width: 20rem;           /* Máximo ancho flexible */
+    border: none;
+    background: #ffffff;
+    color: rgb(0, 0, 0);
+    font-size: 1rem;
+    border-radius: 0.5rem;      /* Esquinas redondeadas */
+    cursor: pointer;
+    box-sizing: border-box;
+}
+
+/*Especificidad: 011*/
+form[name="botones"]{
+    flex-direction: row;
+    justify-content: center;
+}

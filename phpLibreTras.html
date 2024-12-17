@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es"><head>
+    <title>F1 DESKTOP Circuito</title>
+    <link rel="icon" href="../multimedia/imagenes/favicon.ico">
+    <meta name="author" content="Sergio García Santamarina">
+    <meta name="description" content="Documento para utilizar en otros módulos de la asignatura">
+    <meta charset="UTF-8">
+    <meta name="keywords" content="por cambiar">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="estilo/estilo.css">
+    <link rel="stylesheet" type="text/css" href="estilo/layout.css">
+    <link rel="stylesheet" type="text/css" href="estilo/librePhp.css">
+</head>
+
+<body>
+    <!-- Datos con el contenidos que aparece en el navegador -->
+    
+<header>
+    <h1>F1 Desktop</h1>
+    <nav>
+        <a href="../index.html">Inicio</a> 
+        <a href="../piloto.html">Piloto</a> 
+        <a href="../noticias.html">Noticias</a> 
+        <a href="../calendario.html">Calendario</a> 
+        <a href="../meteorología.html">Meteorología</a> 
+        <a href="../circuito.html">Circuito</a> 
+        <a href="../viajes.php">Viajes</a> 
+        <a href="../juegos.html">Juegos</a> 
+       </nav>
+    </header>
+    
+    <p>Estás en: <a href="../index.html">Inicio</a> &gt; &gt; Juegos &gt; &gt; Resultados F1</p>
+    <h2>Menu de Juegos Disponibles</h2>
+    <nav>
+        <a title="Memoria" href="../memoria.html">Memoria</a>
+        <a title="Tiempo de Reacción" href="../semaforo.php">Tiempo de Reacción</a>
+        <a title="Trivial" href="../api.html">Trivial</a>
+        <a title="librePhp" href="librePhp.php">Resultados GP Hungría</a>
+    </nav>
+
+    <form action="#" method="post" enctype="multipart/form-data">
+        <button type="submit" name="accion" value="crearBase">Crear base de datos</button>
+
+        <label for="seleccionarArchivos">Selecciona los csv a importar:</label>
+        <input type="file" id="seleccionarArchivos" name="archivoCSV" accept=".csv">
+
+        <label for="ConfirmarCarga">Cargar csv seleccionados en la base de datos:</label>
+        <input type="submit" id="ConfirmarCarga" value="Subir Archivos" name="submit">
+
+        <button type="submit" name="accion" value="exportarCSV">Exportar CSV</button>
+    </form>
+
+    <main><h2>GP De Hungría ubicado en Mogyoród</h2><table><caption>Pilotos participantes del GP De Hungría</caption><tbody><tr><th scope="col" id="indice">Indice</th><th scope="col" id="nombre">Nombre</th><th scope="col" id="apellidos">Apellidos</th><th scope="col" id="numero">Numero</th><th scope="col" id="nacionalidad">Nacionalidad</th><th scope="col" id="edad">Edad</th><th scope="col" id="equipo">Equipo</th></tr><tr><th scope="row" id="1" headers="indice">1</th><td headers="1 nombre">Max</td><td headers="1 apellidos">Verstappen</td><td headers="1 numero">1</td><td headers="1 nacionalidad">Paises Bajos</td><td headers="1 edad">26</td><td headers="1 edad">Red Bull</td></tr><tr><th scope="row" id="2" headers="indice">2</th><td headers="2 nombre">Sergio</td><td headers="2 apellidos">Pérez</td><td headers="2 numero">11</td><td headers="2 nacionalidad">Mexico</td><td headers="2 edad">33</td><td headers="2 edad">Red Bull</td></tr><tr><th scope="row" id="3" headers="indice">3</th><td headers="3 nombre">Charles</td><td headers="3 apellidos">Leclerc</td><td headers="3 numero">16</td><td headers="3 nacionalidad">Monaco</td><td headers="3 edad">26</td><td headers="3 edad">Ferrari</td></tr><tr><th scope="row" id="4" headers="indice">4</th><td headers="4 nombre">Carlos</td><td headers="4 apellidos">Sainz</td><td headers="4 numero">55</td><td headers="4 nacionalidad">España</td><td headers="4 edad">29</td><td headers="4 edad">Ferrari</td></tr><tr><th scope="row" id="5" headers="indice">5</th><td headers="5 nombre">George</td><td headers="5 apellidos">Russell</td><td headers="5 numero">63</td><td headers="5 nacionalidad">Reino Unido</td><td headers="5 edad">25</td><td headers="5 edad">Mercedes</td></tr><tr><th scope="row" id="6" headers="indice">6</th><td headers="6 nombre">Lewis</td><td headers="6 apellidos">Hamilton</td><td headers="6 numero">44</td><td headers="6 nacionalidad">Reino Unido</td><td headers="6 edad">38</td><td headers="6 edad">Mercedes</td></tr><tr><th scope="row" id="7" headers="indice">7</th><td headers="7 nombre">Esteban</td><td headers="7 apellidos">Ocon</td><td headers="7 numero">31</td><td headers="7 nacionalidad">Francia</td><td headers="7 edad">27</td><td headers="7 edad">Alpine</td></tr><tr><th scope="row" id="8" headers="indice">8</th><td headers="8 nombre">Pierre</td><td headers="8 apellidos">Gasly</td><td headers="8 numero">10</td><td headers="8 nacionalidad">Francia</td><td headers="8 edad">27</td><td headers="8 edad">Alpine</td></tr><tr><th scope="row" id="9" headers="indice">9</th><td headers="9 nombre">Lando</td><td headers="9 apellidos">Norris</td><td headers="9 numero">4</td><td headers="9 nacionalidad">Reino Unido</td><td headers="9 edad">24</td><td headers="9 edad">McLaren</td></tr><tr><th scope="row" id="10" headers="indice">10</th><td headers="10 nombre">Oscar</td><td headers="10 apellidos">Piastri</td><td headers="10 numero">81</td><td headers="10 nacionalidad">Australia</td><td headers="10 edad">22</td><td headers="10 edad">McLaren</td></tr><tr><th scope="row" id="11" headers="indice">11</th><td headers="11 nombre">Valtteri</td><td headers="11 apellidos">Bottas</td><td headers="11 numero">77</td><td headers="11 nacionalidad">Finlandia</td><td headers="11 edad">34</td><td headers="11 edad">Alfa Romeo Sauber</td></tr><tr><th scope="row" id="12" headers="indice">12</th><td headers="12 nombre">Guanyu</td><td headers="12 apellidos">Zhou</td><td headers="12 numero">24</td><td headers="12 nacionalidad">China</td><td headers="12 edad">24</td><td headers="12 edad">Alfa Romeo Sauber</td></tr><tr><th scope="row" id="13" headers="indice">13</th><td headers="13 nombre">Fernando</td><td headers="13 apellidos">Alonso</td><td headers="13 numero">14</td><td headers="13 nacionalidad">España</td><td headers="13 edad">42</td><td headers="13 edad">Aston Martin</td></tr><tr><th scope="row" id="14" headers="indice">14</th><td headers="14 nombre">Lance</td><td headers="14 apellidos">Stroll</td><td headers="14 numero">18</td><td headers="14 nacionalidad">Canada</td><td headers="14 edad">25</td><td headers="14 edad">Aston Martin</td></tr><tr><th scope="row" id="15" headers="indice">15</th><td headers="15 nombre">Kevin</td><td headers="15 apellidos">Magnussen</td><td headers="15 numero">20</td><td headers="15 nacionalidad">Dinamarca</td><td headers="15 edad">31</td><td headers="15 edad">Haas</td></tr><tr><th scope="row" id="16" headers="indice">16</th><td headers="16 nombre">Nico</td><td headers="16 apellidos">Hulkenberg</td><td headers="16 numero">27</td><td headers="16 nacionalidad">Alemania</td><td headers="16 edad">36</td><td headers="16 edad">Haas</td></tr><tr><th scope="row" id="17" headers="indice">17</th><td headers="17 nombre">Yuki</td><td headers="17 apellidos">Tsunoda</td><td headers="17 numero">22</td><td headers="17 nacionalidad">Japon</td><td headers="17 edad">23</td><td headers="17 edad">AlphaTauri</td></tr><tr><th scope="row" id="18" headers="indice">18</th><td headers="18 nombre">Daniel</td><td headers="18 apellidos">Ricciardo</td><td headers="18 numero">3</td><td headers="18 nacionalidad">Paises Bajos</td><td headers="18 edad">35</td><td headers="18 edad">AlphaTauri</td></tr><tr><th scope="row" id="19" headers="indice">19</th><td headers="19 nombre">Alexander</td><td headers="19 apellidos">Albon</td><td headers="19 numero">23</td><td headers="19 nacionalidad">Tailandia</td><td headers="19 edad">27</td><td headers="19 edad">Williams</td></tr><tr><th scope="row" id="20" headers="indice">20</th><td headers="20 nombre">Logan</td><td headers="20 apellidos">Sargeant</td><td headers="20 numero">2</td><td headers="20 nacionalidad">Estados Unidos</td><td headers="20 edad">22</td><td headers="20 edad">Williams</td></tr></tbody></table></main>
+    <form action="#" method="post" name="botones">
+        <button type="submit" name="accion" value="cargarPilotos">Mostrar Pilotos</button>
+        <button type="submit" name="accion" value="cargarEquipos">Mostrar Equipos</button>
+        <button type="submit" name="accion" value="cargarClasificacion">Mostrar Clasificacion</button>
+        <button type="submit" name="accion" value="cargarCarrera">Mostrar Carrera</button>
+    </form>
+
+
+</body></html>

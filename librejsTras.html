@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es"><head>
+    <!-- Datos que describen el documento -->
+    <title>F1 DESKTOP Trivial</title>
+    <link rel="icon" href="multimedia/imagenes/favicon.ico">
+    <meta name="author" content="Sergio García Santamarina">
+    <meta name="description" content="Documento para utilizar en otros módulos de la asignatura">
+    <meta charset="UTF-8">
+    <meta name="keywords" content="por cambiar"> <!--CAMBIAR-->
+    <meta name="viewport" content="width= device-width, initial-scale=1.0">
+     <!-- añadir el elemento link de enlace a la hoja de estilo dentro del <head> del documento html -->
+    <link rel="stylesheet" type="text/css" href="estilo/estilo.css">
+    <link rel="stylesheet" type="text/css" href="estilo/layout.css">
+   <script src="js/api.js"></script>
+</head>
+
+<body>
+    <!-- Datos con el contenidos que aparece en el navegador -->
+    <header>
+    <h1>F1 Desktop</h1>
+    <nav>
+        <a href="index.html">Inicio</a> 
+        <a href="piloto.html">Piloto</a> 
+        <a href="noticias.html">Noticias</a> 
+        <a href="calendario.html">Calendario</a> 
+        <a href="meteorología.html">Meteorología</a> 
+        <a href="circuito.html">Circuito</a> 
+        <a href="viajes.php">Viajes</a> 
+        <a href="juegos.html">Juegos</a> 
+       </nav>
+    </header>
+    <p>Estás en: <a href="index.html">Inicio</a> &gt; &gt; Trivial F1</p>
+    <h2>Trivial de Fórmula 1</h2>
+    <nav>
+        <a title="Memoria" href="memoria.html">Memoria</a>
+        <a title="Tiempo de Reacción" href="semaforo.php">Tiempo de Reacción</a>
+        <a title="libre" href="api.html">Trivial F1</a>
+        <a title="librePhp" href="php/librePhp.php">Resultados GP Hungría</a>
+    </nav>
+    <p>¡ATENCIÓN! A continuacion te van a salir 10 preguntas relacionadas con la Fórmula 1.Si fallas alguna las preguntas
+        se mezclaran, y volveras a empezar. Si cierras el navegador sin querer, cuando vuelvas a entrar iniciaras el trivial
+        desde el punto donde lo dejaste.¡Mucha Suerte!
+    </p>
+    <section data-type="trivial">
+        <h2>Trivial F1</h2>
+        <article>
+            <h2 data-type="question">¿Cual es el piloto que tiene mas campeonatos del mundo?</h2>
+            <section data-type="options"><button>a) Lewis Hamilton</button><button>b) Michael Schumacher</button><button>c) Fernando Alonso</button><button>d) Opcion a y b</button></section>
+        </article>
+        <p data-type="score">Puntuación: 0</p>
+        <!-- Botón para iniciar el trivial -->
+        <button data-action="start" style="display: none;">Iniciar Trivial</button>
+        <!-- Botón para activar pantalla completa -->
+        <button data-action="fullscreen">Pantalla Completa</button>
+        <script>
+            const trivial = new Trivial();
+            trivial.iniciar();
+        </script>
+    </section>
+    
+
+
+</body></html>

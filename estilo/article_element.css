@@ -1,0 +1,77 @@
+/*Sergio García Santamarina*/
+/*Especificidad: 001*/
+section{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+
+/*Especificidad: 002*/
+section h2{
+    text-align: center;
+    width: 100%;
+    flex-grow: 1;
+    margin-bottom: 0.5em;
+    font-size: 2.5em;
+}
+/*Especificidad (0, 0, 1)*/
+article {
+    max-width: 90%; /* El ancho máximo se ajusta al contenedor principal */
+    width: auto; /* Permite que el ancho se ajuste dinámicamente al contenido */
+    height: auto; /* Permite que el alto crezca según el contenido */
+    margin: 1em auto; /* Centra los artículos horizontalmente */
+    padding: 1em; /* Añade espacio interno para mejorar la apariencia */
+    border: 0.3em solid #000;
+    border-radius: 0.3em;
+    background-color: #63FCE8;
+    color: #000;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Alinea los elementos al inicio */
+    align-items: flex-start; /* Alinea los elementos al inicio horizontal */
+    text-align: left; /* Asegura que el texto esté alineado a la izquierda */
+    word-wrap: break-word; /* Fuerza el ajuste de palabras largas */
+}
+/*Especificidad (0, 0, 2)*/
+article img {
+    display: block; /* Asegura que la imagen se trate como un bloque */
+    margin: 0 auto; /* Centra la imagen horizontalmente */
+    max-width: 100%; /* Asegura que no exceda el ancho del contenedor */
+    height: auto; /* Mantiene las proporciones de la imagen */
+}
+/*Especificidad (0, 0, 2)*/
+aside > section {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Alinea todo al inicio (izquierda) */
+    gap: 1em; /* Espaciado entre filas */
+}
+/*Especificidad (0, 0, 3)*/
+aside > section label, 
+aside > section input {
+    display: block; /* Asegura que los elementos estén en filas separadas */
+    width: 30%;
+}
+/*Especificidad (0, 0, 3)*/
+aside > section button {
+    align-self: flex-start; /* Asegura que el botón también esté alineado a la izquierda */
+}
+
+
+/* Estilo para móviles */
+@media screen and (max-width: 465px) {
+    /*Especificidad (0, 0, 1)*/
+    section {
+        flex-direction: column; /* Redefine la dirección para que cada elemento ocupe una fila */
+    }
+    /*Especificidad (0, 0, 1)*/
+    article {
+        width: 100%; /* Redefinido para: Hace que todos los artículos tengan el mismo ancho que el contenedor */
+        box-sizing: border-box; /* Redefinidio para : Asegura que padding y border no excedan el ancho */
+        margin: 0.5em 0; /* Añade un margen uniforme arriba y abajo para que se vea mejor en movil */
+    }
+}

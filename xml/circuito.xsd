@@ -1,0 +1,66 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<xs:schema targetNamespace="http://www.uniovi.es" xmlns="http://www.uniovi.es" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="circuito">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="nombre" type="xs:string"/>
+        <xs:element name="longitud" type="xs:float"/>
+        <xs:element name="anchura" type="xs:float"/>
+        <xs:element name="fechaCarrera" type="xs:date"/>
+        <xs:element name="horaInicio" type="xs:time"/>
+        <xs:element name="numVueltas" type="xs:integer"/>
+        <xs:element name="localidad" type="xs:string"/>
+        <xs:element name="pais" type="xs:string"/>
+       <xs:element name="referencias">
+         <xs:complexType>
+          <xs:sequence>
+          <xs:element name="referencia" type="xs:string" minOccurs = "3" maxOccurs="unbounded"/>
+        </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+        <xs:element name="galeriaFotos">
+  <xs:complexType>
+    <xs:sequence>
+      <xs:element name="fotografia" type="xs:string" minOccurs ="1" maxOccurs="5"/>
+    </xs:sequence>
+  </xs:complexType>
+</xs:element>
+
+<xs:element name="galeriaVideos">
+  <xs:complexType>
+    <xs:sequence>
+      <xs:element name="video" type="xs:string" maxOccurs="3" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+</xs:element>
+        <xs:element name="coordenadas">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="longitud" type="xs:float"/>
+              <xs:element name="latitud" type="xs:float"/>
+              <xs:element name="altitud" type="xs:float"/>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="tramos">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="tramo" maxOccurs="unbounded">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="longitud" type="xs:float"/>
+                    <xs:element name="latitud" type="xs:float"/>
+                    <xs:element name="altitud" type="xs:float"/>
+                  </xs:sequence>
+                  <xs:attribute name="distancia" type="xs:float" use="required"/>
+                  <xs:attribute name="unidadDistancia" type="xs:string" use="required"/>
+                  <xs:attribute name="sector" type="xs:string" use="required"/>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

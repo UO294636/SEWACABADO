@@ -1,0 +1,48 @@
+<!DOCTYPE HTML>
+
+<html lang="es">
+<head>
+    <!-- Datos que describen el documento -->
+    <title>F1 DESKTOP Meteorología</title>
+    <link rel ="icon" href="multimedia/imagenes/favicon.ico" />
+    <meta name = "author" content = "Sergio García Santamarina" />
+    <meta name = "description" content = "Documento para utilizar en otros módulos de la asignatura" />
+    <meta charset="UTF-8" />
+    <meta name = "keywords" content = "cambiar" /> <!--CAMBIAR-->
+    <meta name = "viewport" content = "width= device-width, initial-scale=1.0" />
+     <!-- añadir el elemento link de enlace a la hoja de estilo dentro del <head> del documento html -->
+    <link rel="stylesheet" type="text/css" href="estilo/estilo.css" />
+    <link rel="stylesheet" type="text/css" href="estilo/layout.css" />
+    <link rel="stylesheet" type="text/css" href="estilo/article_element.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="js/pais.js"></script>
+</head>
+
+<body>
+    <!-- Datos con el contenidos que aparece en el navegador -->
+    <header>
+    <h1>F1 Desktop</h1>
+    <nav>
+        <a href="index.html">Inicio</a> 
+        <a href="piloto.html">Piloto</a> 
+        <a href="noticias.html">Noticias</a> 
+        <a href="calendario.html">Calendario</a> 
+        <a href="meteorología.html">Meteorología</a> 
+        <a href="circuito.html">Circuito</a> 
+        <a href="viajes.php">Viajes</a> 
+        <a href="juegos.html">Juegos</a> 
+       </nav>
+    </header>
+    <p>Estas en: <a href="index.html">Inicio</a> > > Meteorología</p>
+    <h2>Meteorología</h2>
+    <script >
+        var hungria = new Pais("Hungría", "Budapest",9.59);
+        hungria.completarPais("Hungaroring"," Democracia constitucional parlamentaria","47.579093,19.248076","Católicos 67,8%");
+        document.write("<h3>"+hungria.getNombrePais()+"</h3>");
+        document.write("<p>"+hungria.getCapitalPais()+"</p>");
+        document.write(hungria.getInformacionSecundaria());
+        hungria.writeCoordinates();
+        hungria.meteorologiaDeLaSalida()
+    </script>
+</body>
+</html>

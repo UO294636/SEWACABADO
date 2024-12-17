@@ -1,0 +1,43 @@
+/*Sergio Garcia Santamarina UO294636*/
+
+/*Especificidad: 001*/
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20em;
+}
+
+/*Especificidad: 001*/
+nav{
+    display: flex;
+    gap: 1em;
+}
+
+/*Estilo para moviles*/
+@media screen and (max-width: 465px) {
+    /*Especificidad: 001*/
+    header{
+        flex-direction: column; /*Redefinicion para adaptar la disposicion del encabezado a moviles*/
+        gap: 1em; /*Redefinicion para adaptar distancia entre elementos del encabezado a moviles*/
+    }
+
+    /*Especificidad: 001*/
+    nav{
+        flex-wrap: wrap; /*Redefinicion para adaptar la disposicion del encabezado a moviles*/
+    }
+}
+
+/*Estilo para tablets*/
+@media screen and (max-width: 1200px) {
+    /*Especificidad: 001*/
+    header{
+        gap: 1em; /*Redefinicion para adaptar distancia entre elementos del encabezado a tablets*/
+        flex-wrap: wrap; /*Redefinicion para adaptar la disposicion del encabezado a tablets*/
+    }
+
+    /*Especificidad: 001*/
+    nav{
+        font-size: 1.2em; /*Redefinicion para adaptar el tamaño de los enlaces a tablets*/
+    }
+}

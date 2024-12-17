@@ -1,0 +1,279 @@
+/*Sergio García Santamarina UO294636 */
+
+/*Especificidad: 001*/
+body {
+    font-family: Tahoma, sans-serif;
+    background-color: #1FA9FF;
+    color: #000000;
+    margin: 1em;
+    padding: 0em;
+}
+
+/*Especificidad: 001*/
+header{
+    background-color: #005B94;
+    color: #FFF;
+    padding: 0.3em;
+}
+
+/*Especificidad: 001*/
+nav{
+    font-size: 1.5em;
+}
+
+/*Especificidad: 001*/
+h1 {
+    font-weight:bold;
+    font-size: 3.5em;
+}
+
+/*Especificidad: 001*/
+h2{
+    font-weight:500;
+    font-size: 2em;
+}
+/*Especificidad (0, 0, 2)*/
+main a {
+    font-size: 1.3em;
+}
+
+/*Especificidad: 011*/
+a:link {
+    color: #2E2E2E; /*Hereda de body el background*/
+}
+
+/*Especificidad: 013*/
+header nav a:link {
+    color: #FFF;
+    background-color: #005B94;
+}
+
+/*Especificidad: 011*/
+a:visited{
+    background-color: #70C8FF;
+    color: #FCFCF2;
+}
+
+/*Especificidad: 013*/
+header nav a:visited{
+    color: #FCFCF2;
+    background-color: #005B94;
+}
+
+/*Especificidad: 011*/
+a:active, a:hover, a:focus{
+    color: #00FF00;/*Hereda de a el background*/
+    /*background-color: #70C8FF;*/
+}
+
+/*Especificidad: 013*/
+header nav a:active, header nav a:hover, header nav a:focus{
+    color: #00FF00;/*hereda de a el background*/
+    /*background-color: #005B94;*/
+}
+
+/*Especificidad: 001*/
+ul {
+    font-size: 0.9em;
+    font-family: 'Times New Roman', serif;
+    list-style-type : square;
+}
+
+/*Especificidad: 001*/
+ol{
+    font-size: 0.9em;
+    font-family: 'Times New Roman', serif;
+    list-style-type : upper-roman;
+}
+
+
+/*Especificidad: 001*/
+dt{
+    font-size: 1.1em;
+    font-family: Arial, sans-serif;
+    margin-bottom: 0.3em;
+}
+
+/*Especificidad: 001*/
+dd{
+    font-size: 0.9em;
+    font-family: Arial, sans-serif;
+    margin-bottom: 1.3em;
+}
+/*Especificidad: 001*/
+table{
+    border-collapse: collapse;
+    border: 0.2em inset #000000;
+    width: 30vw;
+}
+
+/*Especificidad: 001*/
+caption{
+    font-weight:bold;
+    font-family: 'Times New Roman', serif;
+    font-size: 1.6em;
+}
+
+/*Especificidad: 001*/
+th{
+    border-collapse: collapse;
+    border: 0.1em inset #000000;
+    padding: 0.4em;
+    background-color: #0094F0;
+    color: #000000;
+}
+
+/*Especificidad: 001*/
+td{
+    text-align: center;
+    border-collapse: collapse;
+    border: 0.1em inset #000000;
+}
+
+/*Especificidad: 001*/
+img, video{
+    height: 100%;
+    width: auto;
+}
+/*En esta parte de los estilos del carrusel, no lo di ajustado de otra manera ya que 
+ si no me afectaba a la mayoria de los section que estaban en ultimo lugar en el resto de html.Tras investigar en primera
+ instancia tenia puesto role=carrusel, pero investigué y no era recomendable ya que este atributo solía estar reservado
+ para alguna parte del navegar, asi que opte por data-type ya que no afecta negativamente a la accesibilidads*/
+
+/* Especificidad: 021 */
+section[data-type="carrusel"]:last-of-type {
+    flex-wrap: wrap;
+    gap: 1em;
+    /*margin: 2em;*/
+    width: 35%;
+}
+
+/* Especificidad: 022 */
+section[data-type="carrusel"]:last-of-type h2 {
+   flex: 1 1 100%;
+   text-align: center;
+   margin-bottom: 1em;
+}
+/* Especificidad: 012 */
+section[data-type="carrusel"] > article{
+    flex: 1 1 49%;
+    box-sizing: border-box;
+    height: 70vh;
+    position: relative;
+    overflow: hidden;
+}
+/* Especificidad: 013 */
+section[data-type="carrusel"] > article img{
+   width: 100%;
+   height: 100%;
+   position: absolute;
+   transition:all 0.5s ease-in-out;
+   object-fit: cover;
+   border-radius: 0.6em;
+}
+
+/* Especificidad: 022 */
+section[data-type="carrusel"]:last-of-type button {
+    position: absolute;
+    width: 2em;
+    height: 2em;
+    padding: 0.5em;
+    border: none;
+    border-radius: 50%;
+    z-index: 10;
+    cursor: pointer;
+    background-color: #fff;
+    color: #000;
+    font-size: 1em;
+}
+
+/* Especificidad: 032 */
+section[data-type="carrusel"]:last-of-type button:active {
+    transform: scale(1.1);
+}
+
+/* Especificidad: 032 */
+section[data-type="carrusel"]:last-of-type button[data-action="prev"] {
+    top: 50%;
+    left: 2%;
+}
+
+/* Especificidad: 032 */
+section[data-type="carrusel"]:last-of-type button[data-action="next"] {
+    top: 50%;
+    right: 2%;
+}
+/*Para evitar crear otro .css para el juego opte por el data-type*/
+/* Centrar la sección principal */
+/* Especificidad: 011 */
+section[data-type="trivial"] {
+    display: flex;
+    flex-direction: column;              /* Activa Flexbox */
+    justify-content: center;    /* Centra horizontalmente */
+    align-items: center;        /* Centra verticalmente */ /*Hereda el color del section normal*/
+    padding: 2%;                /* Espacio alrededor para evitar bordes pegados */
+    box-sizing: border-box;     /* Incluye padding en el tamaño del elemento */
+}
+
+/* Especificidad: 012 */
+section[data-type="trivial"] legend {
+    font-size: 1.5rem;         
+    margin-bottom: 1rem;       
+}
+
+/* Especificidad: 012 */
+section[data-type="trivial"] button {
+    display: block;
+    margin: 1rem auto;          /* Centra los botones horizontalmente */
+    padding: 0.8rem 5%;         
+    width: 100%;                /* Que ocupe todo el ancho del fieldset */
+    max-width: 20rem;           /* Máximo ancho flexible */
+    border: none;
+    background: #ffffff;
+    color: rgb(0, 0, 0);
+    font-size: 1rem;
+    border-radius: 0.5rem;  
+    cursor: pointer;
+    box-sizing: border-box;
+}
+/* Especificidad: 022 */
+section[data-type="trivial"] button:hover {
+    background: #b0aeae;
+    /*Hereda el color de el boton del trivial de arriba*/
+}
+
+/* Especificidad: 012 */
+section[data-type="trivial"] p {
+    margin: 2% 0;
+    font-size: 1rem;
+    font-weight: bold;
+}
+/* Especificidad: 002 */
+li a{
+    margin-bottom: 1em;
+}
+
+svg{
+    float: left;
+}
+div > img{
+    height: 30vh;
+    width: 30vw;
+}
+
+/*Estilo para moviles*/
+@media screen and (max-width: 465px) {
+    /* Especificidad: 012 */
+    body > p:first-of-type {
+        display: none; /*Para quitar las migas de navegacion en moviles*/
+      }
+      
+    /*Especificidad: 001*/
+    img{
+        width: 80%;/*Redefinicion para adaptar el tamaño del video a moviles*/
+    }
+    /* Especificidad: 001 */
+    video{
+        width: 80%; /*Redefinicion para adaptar el tamaño del video a moviles*/
+    }
+}
